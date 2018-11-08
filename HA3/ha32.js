@@ -9,7 +9,7 @@ console.log(min(0, -10));
 
 function isEven(m) {
     if (m < 0)
-        return "Negative number not allowed!"
+        return "Negative numbers not allowed!"
 
     if (m % 2 == 0)
         return true
@@ -39,9 +39,10 @@ function countChar(string, ch) {
     }
     return counter;
 }
+
 function countBs2(string) {
-	return countChar(string,"B")
-	// body...
+    return countChar(string, "B")
+    // body...
 }
 console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
