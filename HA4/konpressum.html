@@ -31,19 +31,32 @@
                 Müllerstraße 7, 13359 Berlin <br>
                 Tel.: +49 30 48712-6752 <br>
                 E-Mail: max.mustermann@mustermann-gmbh.de</p>
-            <hr/>
+            <hr />
             <h3>Technische Verantwortlichkeit</h3>
-
             <p>
                 Webmaster/in: <br>
                 Timo Großmann <br>
                 Tel.: el.: +49 30 48712-6753 <br>
-                 E-Mail: timo.großmann@mustermann-gmbh.de</p>
+                E-Mail: timo.großmann@mustermann-gmbh.de</p>
             </p>
         </article>
     </div>
     <div id="formular">
         <h2>Formular:</h2>
+        <form action="" autocomplete="on">
+            <fieldset>
+            Anrede: <select name="anrede" required>
+                <option value="frau" selected>Frau</option>
+                <option value="herr">Herr</option>
+            </select> <br>
+            
+                Name: <input type="text" name="nameInput" required> <br>
+                E-Mail: <input type="text" name="email" required> <br>
+                Bezirk: <input type="text" name="bezirk"> <br>
+                Telefonnummer: <input type="text" name="telnr" > <br>
+                Betreff: <input type="text" name="betreff" required> <br>
+            </fieldset>
+        </form>
     </div>
     <div id="footer">
         <ul>
