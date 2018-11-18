@@ -104,7 +104,9 @@ function deepEqual(m, n) {
     }
     let keym = Object.keys(m);
     let keyn = Object.keys(n);
-    console.log(keym);
+    if (keym.length != keyn.length) {
+        retrun false;
+    }
     for (let key of keym) {
         if (!keyn.includes(key) || !deepEqual(m[key], n[key])) {
             return false;
