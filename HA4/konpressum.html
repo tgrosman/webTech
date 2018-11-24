@@ -62,9 +62,27 @@
                         E-Mail: <input type="text" name="email" required> <br>
                         Bezirk: <input type="text" name="bezirk"> <br>
                         Telefonnummer: <input type="text" name="telnr"> <br>
-                        Betreff: <input type="text" name="betreff" required> <br>
+                        Betreff: <input type="text" name="bezirk" list="bezirke">
+                        <datalist id="bezirke">
+                            <select>
+                                <option value="1">Mitte</option>
+                                <option value="2">Friedrichshain-Kreuzberg</option>
+                                <option value="3">Pankow</option>
+                                <option value="4">Charlottenburg-Wilmersdorf</option>
+                                <option value="5">Spandau</option>
+                                <option value="6">Steglitz-Zehlendorf</option>
+                                <option value="7">Tempelhof-Schöneberg</option>
+                                <option value="8">Neukölln</option>
+                                <option value="9">Treptow-Köpenick</option>
+                                <option value="10">Marzahn-Hellersdorf</option>
+                                <option value="11">Lichtenberg</option>
+                                <option value="12">Reinickendorf</option>
+                            </select>
+                        </datalist>
+                        </input> <br>
                         <textarea rows="4" cols="50" required placeholder="Hier Nachricht eingeben..."></textarea> <br>
                         <input type="submit" name="Submit">
+                        <input type="reset" name="Reset">
                     </fieldset>
                 </form>
             </div>
