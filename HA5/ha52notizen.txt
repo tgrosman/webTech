@@ -1,0 +1,26 @@
+1.
+block: separate line, can have width, height
+inline: flows with doc, appears on the same line, width and height no efffect, any padding, margin and border set will update surrounding , but will not affect position of surronding block boxes
+inline-block: something in between, flowss with surroinding text wihtout creating line breaks line kinline, but can be sized..., maintains "block integrity"
+
+Elemente:
+<a>			inline
+<article>	block
+<div>		block
+<h1>		block
+<img>		inline
+<p>			block
+<span>		inline
+<strong>	inline
+	
+2.
+	automatische höhe und Breite: Größe des Inhalts
+	
+	Gesamtbreite: linker Rand + linker Rahmen + linkes polster + Breite + rechter Rand + rechter Rahmen + rechtes Polster
+
+	Vertikaler Abstand: margin-top...
+
+3. block-boxes gehen mit, nehmen immer gesamten viewport ein
+	min-width, max-height
+
+4. Overflow:  scroll; hidden; auto; visible(default)

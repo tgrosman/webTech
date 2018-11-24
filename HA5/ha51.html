@@ -3,14 +3,21 @@
 
 <head>
     <title></title>
-   <link rel="stylesheet" type="text/css" href="ha51.css">
+    <link rel="stylesheet" type="text/css" href="ha51.css">
+    <style type="text/css">
+    p:not([name*=".bla"]) {
+        background-color: pink;
+    }
+    </style>
 </head>
 
-<body >
+<body>
     <main>
         <section id="firstSection" class="sections">
-            <h1 style="background-color: green">Cloud9</h1>
-            <p id="firstTextPart" class="text">Make something
+            <h1>Cloud9</h1>
+            <p name="test.hotel" id="firstTextPart" class="text">Make something
+                <strong>amazing</strong> with the web!</p>
+            <p name="test2.example" id="secondTextPart" class="text">Make something
                 <strong>amazing</strong> with the web!</p>
         </section>
     </main>

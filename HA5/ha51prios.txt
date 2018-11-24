@@ -1,0 +1,9 @@
+Prioritäten:
+
+ 	ID-Selektor
+ 	Pseudoklasse:not
+ 	Pseudoklasse:hover
+	Attributselektor
+	Nachfahrselektor 
+	Klassenselektor
+	Elementselektor
