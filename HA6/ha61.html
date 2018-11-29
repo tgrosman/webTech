@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    #inhalt {
+        counter-reset: section;
+        
+    }
+    h1{
+    	counter-reset: subsection;
+    }
+	h2{
+		counter-reset: subsubsection;
+	}
+    h1::before {
+    	
+        counter-increment: section;
+        content: counter(section) ".";
+    }
+
+    h2::before {
+		counter-increment: subsection; 
+		content: counter(section) "." counter(subsection) " ";
+    }
+
+    h3::before {
+		counter-increment: subsubsection; 
+		content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+    }
+    </style>
+</head>
+
+<body>
+    <div id="inhalt">
+        <h1>Überschrift</h1>
+        <article>
+        	<h2>Einleitung</h2>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+        	<h2>Mittelteil</h2>
+        	<h3>Die Theorie</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	<h3>Die Herausforderung</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+        	<h2>Abschluss</h2>
+        	<h3>Fazit</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	<h3>Ausblick</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        
+        
+    </div>
+</body>
+
+</html>
