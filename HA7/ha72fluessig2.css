@@ -1,0 +1,103 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+.col-13 {
+	width: 24.45%;
+}
+.col-14 {
+	width: 74.75%;
+}
+
+body {
+    min-width: 700px;
+    background-color: grey;
+}
+
+#header {
+    background-color: white;
+    height: 75px;
+    border-left: 2px solid black;
+    border: 2px solid black;
+}
+
+#topNav {
+    background-color: white;
+	border-left:2px solid black;
+		border-bottom:2px solid black;
+}
+
+#topNav a {
+    display: block;
+}
+
+#main {
+    background-color: white;
+    float:right;
+    border-left:2px solid black;
+    border-right:2px solid black;
+}
+
+#footer {
+    background-color: white;
+    border: 2px solid black;
+}
+
+#footer a {
+    float: right;
+    text-align: center;
+    padding-left: 14px;
+}

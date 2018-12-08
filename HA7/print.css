@@ -1,0 +1,30 @@
+@media print and (orientation: portrait) {
+
+    #header,
+    #topNav,
+    #footer {
+        display: none !important;
+    }
+}
+
+@media print and (orientation: landscape) {
+
+    #header,
+    #topNav,
+    #footer {
+
+        display: none !important;
+
+    }
+
+    #main {
+        -webkit-column-count: 3;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 3;
+        /* Firefox */
+        column-count: 3 !important;
+    }
+
+
+
+}

@@ -7,12 +7,12 @@ const persons = [
     ['Magdalena', 1979, 1, 'f'],
 ];
 const test = [
-    ['Max', 1990, 1, ],
-    ['Maria', 1990, 1, ],
-    ['Meik', 1990, 1, ],
-    ['Mareike', 1990, 1, ],
-    ['Mervin', 1990, 1, ],
-    ['Magdalena', 1990, 1, ],
+    ['Max', 1990, 1, 'Baum'],
+    ['Maria', 1990, 1, 'f'],
+    ['Meik', 1990, 1, 'Baum'],
+    ['Mareike', 1990, 1, 'f'],
+    ['Mervin', 1990, 1, 'm'],
+    ['Magdalena', 1990, 1, 'f'],
 ];
 // Diese Funktion filtert das übergebene Array nach dem Geschlecht
 // Rückgabe: ein Array, das alle Personen des ursprünglichen Arrays enthält, bei denen das // Geschlecht dem übergebenen Parameter entspricht; Wenn kein Eintrag vorhanden ist,
@@ -88,7 +88,11 @@ console.log(getAggregatedAge(persons));
 // Bsp-Rückgabe für persons:
 // Map { 'f'=> 3, 'm'=> 3 }
 function getAmount(personsArray) {
-    return personsArray.map(function(array){
-        if((array))
-    })
+    return { 'f': filterGender(personsArray, 'f'), 'm': filterGender(personsArray,'m'), 'Baum': filterGender(personsArray,'Baum') };
 }
+function filterGender(array, gender){
+    return array.filter( array => array[3] === gender).length;
+}
+console.log(getAmount(persons))
+// console.log(getAmount(test))
+
