@@ -1,0 +1,21 @@
+#cont{
+	display: flex;
+	 flex-flow: row wrap;
+
+}
+.child{
+	width: 288px;
+	padding: 10px;
+}
+.bottom-left{
+	color:white;
+	position: absolute;
+	top:130px;
+
+}
+.header{
+	position: relative;
+}
+#smallOne{
+	top:75px;
+}
