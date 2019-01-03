@@ -1,0 +1,138 @@
+@media (max-width: 700px) {
+	body{
+		background-color: grey;
+	}
+    .container {
+        display: grid;
+        grid-template-areas:
+            "head head head head head nav nav nav"
+            " . art art art art art art ."
+            "footer footer footer footer footer footer footer footer"
+    }
+
+    .container>header {
+        grid-area: head;
+        background-color: white;
+        border-left: black 2px solid;
+        border-top: black 2px solid;
+        border-bottom: black 2px solid;
+        margin: 0;
+    }
+
+    .container>article {
+        grid-area: art;
+        background-color: white;
+        border-right: black 2px solid;
+        border-left: black 2px solid;
+        height: 600px;
+    }
+
+    .container>nav {
+        grid-area: nav;
+        background-color: white;
+        float: right;
+                border-right: black 2px solid;
+        border-top: black 2px solid;
+        border-bottom: black 2px solid;
+
+    }
+
+    .container>footer {
+        grid-area: footer;
+        background-color: white;
+        border: black 2px solid;
+
+    }
+
+    .menu>ul {
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .menu>ul>li {
+
+        display: inline;
+        border: 2px;
+        letter-spacing: 0.125em;
+        float:right;
+    }
+        .menu2>ul {
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .menu2>ul>li {
+
+        display: inline;
+        border: 2px;
+        letter-spacing: 0.125em;
+        float:right;
+    }
+
+}
+
+@media (min-width: 701px) {
+    	body{
+		background-color: grey;
+	}
+    .container {
+        display: grid;
+        grid-template-areas:
+            "head head head head"
+            "nav art art art"
+            "footer footer footer footer"
+    }
+        .container>header {
+        grid-area: head;
+        background-color: white;
+        border: black 2px solid;
+    }
+
+    .container>article {
+        grid-area: art;
+        background-color: white;
+        border-right: black 2px solid;
+        border-left: black 2px solid;
+        height: 600px;
+    }
+
+    .container>nav {
+        grid-area: nav;
+        background-color: white;
+        float: right;
+		border-left: black 2px solid;
+		border-bottom: black 2px solid;
+
+    }
+
+    .container>footer {
+        grid-area: footer;
+        background-color: white;
+        border: black 2px solid;
+
+
+    }
+    #navBar{
+    	height: 200px;
+        min-width: 150px;
+		
+
+    }
+
+
+        .menu2>ul {
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .menu2>ul>li {
+
+        display: inline;
+        border: 2px;
+        letter-spacing: 0.125em;
+        float:right;
+    }
+}
